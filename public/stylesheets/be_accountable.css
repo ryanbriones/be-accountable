@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.previous_month_link, .next_month_link { width: 25%; text-transform: uppercase; font-weight: bold; }
+.previous_month_link a, .next_month_link a { text-decoration: none; color: #CCC; }
+.previous_month_link a:hover, .next_month_link a:hover { color: #990000; }
+.previous_month_link { float: left; }
+.next_month_link { float: right; text-align: right; }
+
+.calendar { border-top: 1px solid #CCC; }
+
+.day.otherMonth div { color: #666666; }
+.day.today div { color: #009900; }
+.monthName { text-align: center; text-transform: uppercase; font-size: 50px; color: #990000; }
+.dayName { text-transform: uppercase; text-align: center; font-size: 20px; font-weight: normal; color: #666666; }
+.dayName th { padding: 10px; border-bottom: 1px solid #CCCCCC; }
+.day .responsibilities, .day .date { display: none }
+.day div { 
+    width: 100px; 
+    height: 60px; 
+    text-align: center; 
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 60px;
+    color: #000000;
+    position: relative;
+	cursor: pointer;
+}
+.dayHovered { 
+	background-color: #CCC;
+}
+
+.day .overlay {
+    position: absolute; 
+     top: 8px;
+    left:  28px;
+    height: 60px; 
+    width: 100px; 
+}
+.strike .overlay { 
+    background: transparent url(../images/x_2.png) no-repeat; 
+}
+.spare .overlay {
+    background: transparent url(../images/spare.png) no-repeat;
+}
